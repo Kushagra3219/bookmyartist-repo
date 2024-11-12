@@ -1,0 +1,123 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  width: 100vw;            /* Take full width of viewport */
+  height: -150vh;           /* Take full height of viewport */
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;     /* Center content vertically */
+  flex-direction: column;  /* Stack content vertically */
+  min-width: 320px;
+  background-color: #242424; /* Default dark background */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-bottom: 20px;     /* Space between heading and other content */
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: #fff;             /* Button text color */
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.3s;
+  margin-top: 20px;        /* Space between button and other content */
+}
+
+button:hover {
+  border-color: #646cff;
+  background-color: #333;  /* Darker background on hover */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+button{
+    display: flex;
+    column-gap: 100px;  /* Set a gap of 20px */
+    align-items: flex-start;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff; /* Light mode background */
+  }
+  
+  a:hover {
+    color: #747bff;
+  }
+  
+  button {
+    background-color: #f9f9f9; /* Light mode button */
+    border: 1px solid #ccc;    /* Light mode border */
+    color: #333;               /* Dark text for button */
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #e6e6e6; /* Light mode hover effect */
+  }
+}
+*btn btn-light{
+  display: flex;
+    column-gap: 200px;  /* Set a gap of 20px */
+    align-items: flex-start;
+}
+
+/* Additional responsiveness adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em; /* Adjust heading size on smaller screens */
+  }
+
+  button {
+    font-size: 0.9em; /* Slightly smaller button font on smaller screens */
+    padding: 0.5em 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2em;   /* Further reduce heading size for mobile */
+  }
+
+  button {
+    width: 100%;      /* Button takes up full width on small screens */
+    padding: 0.7em 0; /* Adjust padding for button to make it more mobile-friendly */
+  }
+}
+
